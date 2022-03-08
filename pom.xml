@@ -6,11 +6,32 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-  	  <module>Exception</module>
-  	  <module>Validation</module>
-  	  <module>View</module>
-      <module>Employee</module>
-      <module>DatabaseConnection</module>
-      <module>EmployeeFeature</module>
+  	  <module>exception</module>
+  	  <module>validation</module>
+  	  <module>employee</module>
+      <module>databaseConnection</module>
+      <module>employeeFeature</module>
+      <module>userInputs</module>
   </modules>
+
+    <properties>
+        <maven-bundle-plugin.version>5.1.4</maven-bundle-plugin.version>
+        <osgi.version>7.0.0</osgi.version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <maxmem>256M</maxmem>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
