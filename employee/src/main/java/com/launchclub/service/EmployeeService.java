@@ -1,6 +1,6 @@
 package com.launchclub.service;
 
-import com.launchclub.Model.Employee;
+import com.launchclub.model.Employee;
 
 import java.util.List;
 

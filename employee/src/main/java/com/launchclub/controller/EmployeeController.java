@@ -1,8 +1,8 @@
 package com.launchclub.controller;
 
-import com.launchclub.Model.Employee;
-import com.launchclub.Service.EmployeeService;
-import com.launchclub.Service.EmployeeServiceImplVersion2;
+import com.launchclub.model.Employee;
+import com.launchclub.service.EmployeeService;
+import com.launchclub.service.EmployeeServiceImplVersion2;
 
 import java.util.List;
 

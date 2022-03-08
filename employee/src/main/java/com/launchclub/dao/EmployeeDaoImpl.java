@@ -1,9 +1,9 @@
 package com.launchclub.dao;
 
-import com.launchclub.Dao.ConnectDataBase;
-import com.launchclub.Dao.EmployeeDao;
+
 import com.launchclub.Exception.AccessfailedException;
-import com.launchclub.Model.Employee;
+import com.launchclub.connectDataBase.ConnectDataBase;
+import com.launchclub.model.Employee;
 
 import java.sql.*;
 import java.util.HashMap;
@@ -23,7 +23,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		final String query = "insert into employeedetails (employeeId, employeeName, employeePhoneNo, employeeSalary, employeeDateOfBirth, isactive) values (?, ?, ?, ?, ?, true)";
 
 		try (Connection connection = ConnectDataBase.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+			 PreparedStatement preparedStatement = connection.prepareStatement(query)) {
 			final Date startDate = new Date(employee.getEmployeeDateOfBirth().getTime());
 
 			preparedStatement.setString(1, employee.getEmployeeId());

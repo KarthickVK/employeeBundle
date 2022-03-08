@@ -1,6 +1,6 @@
 package com.launchclub.dao;
 
-import com.launchclub.Model.Employee;
+import com.launchclub.model.Employee;
 
 import java.util.Map;
 
