@@ -34,7 +34,7 @@ public class Validation {
 	/**
 	 * Validate the employeeDateOfBirth.
 	 */
-	public static boolean validateDate(final String employeeDateOfBirth) {
+	public static boolean validateDate(final String employeeDateOfBirth)  {
 
 		try {
 			final LocalDate date = LocalDate.parse(employeeDateOfBirth);

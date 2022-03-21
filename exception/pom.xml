@@ -11,7 +11,6 @@
 
     <groupId>com.launchclub</groupId>
     <artifactId>exception</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
     <name>Exception Bundle</name>
@@ -21,8 +20,6 @@
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>osgi.core</artifactId>
-            <version>${osgi.version}</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -31,14 +28,9 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>${maven-bundle-plugin.version}</version>
-                <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-                        <Bundle-Version>${project.version}</Bundle-Version>
-                        <Export-Package>com.launchclub.Exception*;version=${project.version}</Export-Package>
-                        <Import-Package>*</Import-Package>
+                        <Export-Package>com.launchclub.exception;version=${project.version}</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
