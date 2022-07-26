@@ -56,6 +56,7 @@ public class EmployeeView {
 			return choice;
 		} else {
 			LOGGER.warn("Please Enter Valid Choice:");
+			System.out.println("hello");
 			return EmployeeView.getMenuChoice();
 		}
 	}
